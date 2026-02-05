@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>lidar_scan_clustering</name>
+  <version>0.0.1</version>
+  <description>
+    TurtleBot3 simulation에서 /scan 토픽을 이용한
+    2D LiDAR 기반 클러스터링 실습 패키지
+  </description>
+
+  <maintainer email="jglim@inha.ac.kr">임정근</maintainer>
+  <license>Apache-2.0</license>
+
+  <!-- 빌드 도구 -->
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <!-- ROS2 기본 -->
+  <depend>rclpy</depend>
+
+  <!-- 메시지 타입 -->
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>visualization_msgs</depend>
+
+  <!-- 실행 시 필요한 Python 패키지 -->
+  <!-- numpy, sklearn은 pip 설치이므로 여기에는 명시하지 않음 -->
+
+  <!-- 테스트(선택) -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
