@@ -22,6 +22,9 @@ setup(
         'console_scripts': [
             # ros2 run lidar_scan_clustering scan_cluster
             'scan_cluster = lidar_scan_clustering.scan_cluster_node:main',
+            'pf_cluster_avoid = lidar_scan_clustering.pf_cluster_avoid_node:main',
+            'pf_click_goal_avoid = lidar_scan_clustering.pf_click_goal_avoid_node:main',
+            'planner_pf_astar = lidar_scan_clustering.planner_pf_astar_node:main',
         ],
     },
 )
